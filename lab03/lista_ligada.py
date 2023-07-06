@@ -109,3 +109,15 @@ class LinkedList(estrutura_elementar):
             aux = aux.proximo
             contador += 1
         return None
+
+   def remove_indice(self, index):
+        if self.inicio is None:
+            return None
+        aux = self.inicio
+        contador = 0
+        while aux is not None:
+             if contador == index:
+                self.remove(index)
+             aux = aux.proximo
+             contador += 1
+

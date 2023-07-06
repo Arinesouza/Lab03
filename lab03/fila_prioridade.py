@@ -11,3 +11,14 @@ class prioridade:
         else:
             self.dados.inserir_fim(valor)
             
+     def desenfla(self, valor):
+         if self.dados_prio is not None:
+             self.dados_prio.remove(valor)
+         else:
+            self.dados.remove(valor)
+
+    def seach(self,item):
+         if self.dados_prio is not None:
+             self.dados_prio.procura(item)
+         else:
+            self.dados.remove(item)
